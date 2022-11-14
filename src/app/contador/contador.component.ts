@@ -19,4 +19,16 @@ export class ContadorComponent implements OnInit {
     edad: 26
   }
 
+  numero:number = 1;
+
+  decrementar() {
+    if(this.numero > 0){
+      this.numero--;
+    }
+  }
+  
+  incrementar() {
+    this.numero += 1;
+  }
+
 }
